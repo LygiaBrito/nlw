@@ -8,8 +8,11 @@
     Language
   -->
 <!DOCTYPE html>
-<html>
+<html lang="pt_br">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Lygia Brito - NLW</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,33 +31,35 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="images/fotolygia.svg" alt="Foto pessoal" />
+          <img src="images/fotolygia.svg" alt="Foto pessoal" id="userImage" />
         </div>
 
         <h1 id="userName">Lygia rodrigues</h1>
-        <a href="https://github.com/lygiabrito" target="_blank">
+        <a id="userLink" href="https://github.com/lygiabrito" target="_blank">
           <img src="images/github.svg" alt="Ícone github" target="_blank" />
-          lygiabrito
+          <span id="userLogin">lygiabrito</span>
         </a>
-        <p>An instructor focused on helping pople start programming for web</p>
-        <ul>
-          <li>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="https://youtube.com/lygiav.rodrigues" target="_blank">
               <img src="images/youtube.svg" alt="Ícone Youtube" />
             </a>
           </li>
-          <li>
-            <a href="https://facebook.com/" target="_blank">
+          <li class="facebook">
+            <a href="https://facebook.com/lygiabrito" target="_blank">
               <img src="images/facebook.svg" alt="Ícone facebook" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://instagram.com/lygia.brito" target="_blank">
               <img src="images/instagram.svg" alt="Ícone instagram" />
             </a>
           </li>
 
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com/lygia.brito" target="_blank">
               <img src="images/twitter.svg" alt="Ícone twitter" />
             </a>
@@ -62,20 +67,6 @@
         </ul>
       </div>
     </main>
-    <script>
-      const linksSocialMidia = {
-        github: 'lygiabrito',
-        youtube: 'UCBRdEDfNOPgTX9ZE9QaGENQ',
-        facebook: 'lygia.brito',
-        instagram: 'lygiabrito',
-        twitter: 'LygiaBrito1'
-      }
-
-      function changeLinksSocialMedia() {
-        userName.textContent = 'Lygia Brito'
-      }
-
-      changeLinksSocialMedia()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
