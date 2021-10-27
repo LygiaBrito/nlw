@@ -24,32 +24,44 @@ main {
   width: 358px;
   height: 540px;
 }
+.faixaHorizontal {
+  width: 80px;
+  height: 8px;
+}
+.faixaVertical {
+  width: 64px;
+  height: 158px;
+  background-image: linear-gradient(#ff008e, #ffcd1e);
+
+  margin-left: 9.1875rem;
+}
 .degrade1 {
-  background: url(images/degrade1.svg) no-repeat;
+  background: url(images/degrade1.svg) no-repeat top;
   height: 1118px;
   width: 1118px;
   position: absolute;
-  transform: translateX(25%);
+  transform: translateX(20%);
 }
 .degrade2 {
   background: url(images/degrade2.svg) no-repeat;
   height: 1118px;
   width: 1118px;
   position: absolute;
-  transform: translateX(-25%) translateY(8%);
+  transform: translateX(-20%);
 }
 .container {
   max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  bottom: 10rem;
 
   color: var(--grey);
 }
 
 .avatar {
   width: 10rem;
-  margin: 11.5rem auto 0;
+  margin: 3.37rem auto 0;
 
   position: relative;
 }
@@ -92,7 +104,8 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 
   list-style: none;
   padding: 0;
