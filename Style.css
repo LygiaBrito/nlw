@@ -25,7 +25,16 @@ main {
   height: 540px;
   position: relative;
 }
-
+@media all and (min-width: 960px) and (min-width: 720px) {
+  /* estilos versão desktop */
+  .backgroundMain {
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 22.375rem center;
+    height: 33.75rem center;
+    margin: auto auto;
+    position: relative;
+  }
+}
 .degrade1 {
   background: url(images/degrade1.svg) no-repeat top center;
   height: 1118px;
@@ -43,9 +52,6 @@ main {
 .container {
   max-width: 358px;
   height: 100rem;
-  width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   bottom: 10rem;
   align-items: center;
